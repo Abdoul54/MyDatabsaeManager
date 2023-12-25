@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:baselineAligned="false">
+
+    <!-- Employee Name, Department, and Salary -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Employee Name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textViewDepartement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Department"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textViewSalary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Salary"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <!-- Employee Date -->
+        <TextView
+            android:id="@+id/textViewJoiningDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Join Date"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- Edit and Delete Buttons -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/buttonEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Edit" />
+
+        <Button
+            android:id="@+id/buttonDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Delete" />
+    </LinearLayout>
+</LinearLayout>
